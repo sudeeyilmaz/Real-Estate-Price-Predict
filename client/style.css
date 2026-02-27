@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, html {
+    min-height: 100vh; /* Yüksekliği ekranın tamamı kadar yap (taşırmadan) */
+    margin: 0;
+    padding: 20px 0; /* Üstten ve alttan boşluk bırak ki kenarlara yapışmasın */
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arka plan resmi */
+.img {
+    background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(0.25) blur(8px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; /* Sabitlemeyi garantiler */
+    left: 0;
+    z-index: -1;
+}
+
+/* Cam efekti (Glassmorphism) uygulanan ana panel */
+.container {
+    background: rgba(30, 30, 30, 0.7);
+    backdrop-filter: blur(15px);
+    padding: 25px 35px; /* İç boşlukları biraz daralttık */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: 380px;
+    max-width: 90%; /* Mobilde taşmasın diye */
+}
+
+.title {
+    text-align: center;
+    font-size: 22px; /* Biraz küçülttük */
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 13px; /* Başlıkları biraz daha kibar yaptık */
+    margin-bottom: 6px;
+    color: #a0a0a0;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* Form elemanları */
+.area, .location {
+    width: 100%;
+    padding: 10px 12px; /* Yüksekliğini biraz kıstık */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Alt boşlukları kıstık */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.area:focus, .location:focus {
+    border-color: #bb86fc; 
+}
+
+.location option {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+/* Buton grupları (Radio) */
+.switch-field {
+    display: flex;
+    margin-bottom: 18px; /* Alt boşluğu kıstık */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.switch-field input {
+    display: none;
+}
+
+.switch-field label {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0; /* Buton kalınlığını biraz azalttık */
+    background: rgba(255, 255, 255, 0.03);
+    color: #888;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.switch-field label:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.switch-field input:checked + label {
+    background: #bb86fc;
+    color: #121212;
+    font-weight: 600;
+}
+
+/* Gönder butonu */
+.submit {
+    width: 100%;
+    background: #03dac6; 
+    color: #121212;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.submit:hover {
+    background: #00b3a6;
+    transform: translateY(-2px);
+}
+
+/* Sonuç ekranı */
+.result {
+    margin-top: 15px;
+    text-align: center;
+    min-height: 35px;
+}
+
+.result h2 {
+    color: #03dac6;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}

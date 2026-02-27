@@ -4,7 +4,7 @@ Welcome to my very first mini Data Science and Machine Learning project! 🚀
 
 This full-stack web application predicts real estate prices in Bangalore, India. It takes user inputs such as square footage, number of bedrooms (BHK), bathrooms, and location to estimate the property's value. The project covers the entire machine learning lifecycle: from data cleaning and outlier detection to model building, deploying a backend API, and connecting it to a modern, responsive frontend.
 
-![UI Screenshot](client/ui_screenshot.png) *(Not: Buraya arayüzün ekran görüntüsünü ekleyebilirsin)*
+<img width="1346" height="547" alt="Screenshot From 2026-02-27 10-42-29" src="https://github.com/user-attachments/assets/4e16b8ef-8bc2-4240-a38a-863519b412c6" />
 
 ## ✨ Features
 * **Accurate Predictions:** Uses a Linear Regression model trained on real Bangalore property data.
